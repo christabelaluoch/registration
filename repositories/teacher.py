@@ -24,3 +24,4 @@ def update_teacher(id, name, email, course, teacher_id):
 def delete_teacher(id):
     with get_connection() as connection:
         connection.execute('DELETE FROM teachers WHERE id = ?',(id,))
+        
